@@ -1,72 +1,62 @@
-# 🏦 Banking System (Java + SQL using JDBC) 
+# 🏦 Banking System (Java + SQL)
 
-
-## 📌 Overview
-
-This is a console-based banking application built using Java and SQLite.
-The system allows users to perform basic banking operations such as account creation, deposits, withdrawals, transfers, and transaction tracking.
+This project is a **console-based Banking System** built using **Java, JDBC, and SQLite**.
+It simulates basic banking operations such as account creation, deposits, withdrawals, transfers, and transaction tracking.
 
 ---
 
 ## 🚀 Features
 
-* 👤 Create account
-* 💰 Deposit money
-* 💸 Withdraw money
-* 🔍 Check balance
-* 🔁 Transfer money between accounts
-* 📄 View transaction history
-* ❌ Delete account
+* 👤 **Create Account** with PIN
+* 💰 **Deposit Money** into account
+* 💸 **Withdraw Money** with balance check
+* 🔍 **Check Balance**
+* 🔁 **Transfer Money** between accounts
+* 📄 **Transaction History** with timestamp
+* ❌ **Delete Account** with PIN verification
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-* ☕ Java
-* 🔌 JDBC
-* 🗄️ SQLite
-* 💻 IntelliJ IDEA
+* ☕ **Java**
+* 🔌 **JDBC (SQLite)**
+* 🗄️ **SQLite Database**
+* 💻 **IntelliJ IDEA**
 
 ---
 
-## 🗄️ Database Structure
+## 📂 Project Structure
 
-### 📊 Accounts Table
-
-| Column         | Type    |
-| -------------- | ------- |
-| account_number | INTEGER |
-| name           | TEXT    |
-| balance        | REAL    |
-| pin            | INTEGER |
-
-### 📊 Transactions Table
-
-| Column         | Type     |
-| -------------- | -------- |
-| id             | INTEGER  |
-| account_number | INTEGER  |
-| type           | TEXT     |
-| amount         | REAL     ||
+```
+Banking-System/
+├── src/
+│   └── TestDB.java
+├── bank.db
+├── screenshots/
+└── README.md
+```
 
 ---
 
 ## ⚙️ How to Run
 
-1. Clone the repository
-```
-git clone https://github.com/your-username/Banking-System-Java.git
-```
+1. Clone this repository:
 
-2. Open the project in IntelliJ IDEA
+   ```bash
+   git clone https://github.com/your-username/Banking-System-Java.git
+   cd Banking-System-Java
+   ```
 
-3. Add SQLite JDBC driver (.jar file)
+2. Open project in IntelliJ IDEA
+
+3. Add SQLite JDBC driver (`.jar`)
 
 4. Run `TestDB.java`
 
 ---
 
-## ▶️ Sample Menu
+## ▶️ Sample Output
 
 ```
 ====== BANK MENU ======
@@ -80,16 +70,19 @@ git clone https://github.com/your-username/Banking-System-Java.git
 8. Exit
 ```
 
-## 📌 Notes
+---
 
-* Database (`bank.db`) is created automatically
-* Transactions are stored with timestamp
-* Uses PreparedStatement for secure queries
+
+
+## 💡 Future Improvements
+
+* 🖥 Add GUI using Java Swing / JavaFX
+* 🔐 Implement login system
+* 🌐 Convert into web application (Spring Boot)
+* 📱 Make mobile-friendly version
 
 ---
 
-## 👤 Author
+## 👨‍💻 Author
 
-* Chenna Venkata Satish
-
-
+Developed by Chenna Satish 🚀
